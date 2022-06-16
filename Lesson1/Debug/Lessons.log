@@ -1,0 +1,12 @@
+﻿  Lessons.cpp
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: y2: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: y1: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: x1: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: x4: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: y3: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: x3: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: y5: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: x5: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: y4: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(16): warning C4101: x2: неиспользованная локальная переменная
+  Lessons.vcxproj -> C:\Users\Alex-\source\repos\Lessons\Debug\Lessons.exe
