@@ -2,8 +2,18 @@
 c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
 c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
 c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(110): warning C4554: "^": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(116): warning C4554: "^": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(122): warning C4554: "^": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(84): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(87): warning C4101: y2: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(87): warning C4101: y1: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(86): warning C4101: x1: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(86): warning C4101: x4: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(87): warning C4101: y3: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(86): warning C4101: x3: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(87): warning C4101: y5: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(86): warning C4101: x5: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(87): warning C4101: y4: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(86): warning C4101: x2: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(68): warning C4717: sum: рекурсия на всех путях выполнения, функция вызовет переполнение стека
   Lessons.vcxproj -> C:\Users\Alex-\source\repos\Lessons\Debug\Lessons.exe

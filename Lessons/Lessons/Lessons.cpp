@@ -5,154 +5,129 @@
 #include <vector>;
 #include <iostream>;
 #include <ctime>;
+#include <string>;
+#include <cmath>;
 using namespace std;
-//Задание 1. Расчет площади пятугольнка
-double Sfive(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4, double x5, double y5)
+
+
+double Dlina(int x1, int y1, int x2, int y2)//Задание 1. Расчет площади сложной фигуры
 {
-	cout << "Плошадь пятиугольника: " << 0.5*abs(x1*y2 + x2*y3 + x3*y4 + x4*y5 + x5*y1 - x2*y1 - x3*y2 - x4*y3 - x5*y4 - x1*y5);
+	double l=0;
+	l = sqrt(pow((x2 - x1),2)+ pow((y2 - y1),2));
+	cout << l;
+	return l;
+
+}
+double Striangle(int x1, int y1, int x2, int y2, int x3,   int y3)//Задание 1. Расчет площади сложной фигуры
+{
+	double a, b, c, P,S;
+	a = Dlina(x1, y1, x2, y2);
+	b = Dlina(x3, y3, x1, y1);
+	c = Dlina(x2, y2, x3, y3);
+	P = (a + b + c) / 2.0;
+	S = sqrt(P * (P - a) * (P - b) * (P - c));
+	cout << S;
+
+	return S;
+
+}
+double Summa(double a, double b, double c)
+{
+	cout << " Сумма фигуры равна:" << a + b + c;
 	return 0;
 }
 
+
+//Задание 2. Применение итерации реализации функции
+double C1(double num) {
+	return pow(num, 1.0 / 3);
+}
+
+double C2(double num) {
+	double x = num;
+	for (int i = 0; i < 10; i++)
+		x = (num / (x * x) + 2 * x) / 3;	
+	return x;
+}
+//Задание 3. Работа с различными треугольниками
+double Triangle(double e) {
+	double s =(sqrt(3 / 4)*pow(e,2)) / 2;
+
+	return s;
+}
+double Triangle(double a,double b,double c) {
+
+	double p = (a + b + c) / 2;
+	double s = sqrt(p * (p - a) * (p - b) * (p - c));
+	return s;
+}
+
+//Задание 4. Рекурсивная функция суммы ряда
+int sum(int n) {
+	 return(n * 5 + sum(n - 1));
+}
+//
+void converter(int num) {//Задание 5. Применение рекурсии для перевода целого числа в двоичный код
+	if (num <= 2) {
+		std::cout << num;
+		return;
+	}
+	else {
+		converter(num / 2);
+		std::cout << num % 2;
+		return;
+	}
+}
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	srand(time(nullptr));
+	
+	int x1, x2, x3, x4, x5;
+	int y1, y2, y3, y4, y5;
+	double a=0, b=0, c=0;
 
 	
-	
-	//Задание 1. Расчет площади пятугольнка/
-	/*
-double x1,y1,x2,y2,x3,y3,x4,y4,x5, y5;
-	cout << "Введите координаты вершин пятиугольника" << endl;
-	cout << " x1 y1: ";
-	cin >> x1 >> y1;
-	cout << "\n x2 y2: ";
+	cout << "Введите kоординаты x y 1-й вершины фигуры:";
+    cin >> x1 >> y1;
+	cout << "\nВведите kоординаты x y 2-й вершины фигуры:";
 	cin >> x2 >> y2;
-	cout << "\n x3 y3: ";
+	cout << "\nВведите kоординаты x y 3-й вершины фигуры:";
 	cin >> x3 >> y3;
-	cout << "\n x4 y4: ";
+	cout << "\nВведите kоординаты x y 4-й вершины фигуры:";
 	cin >> x4 >> y4;
-	cout << "\n x5 y5: ";
+	cout << "\nВведите kоординаты x y 4-й вершины фигуры:";
 	cin >> x5 >> y5;
-	Sfive(x1, y1, x2, y2, x3, y3, x4, y4, x5, y5);
-	*/
-	
-	
-	
-	cout << "\n---------------------\n";// контрольное задание стр 16 Определение високосного года
-	int god;
-	cout << "Введите год:";
-	cin >> god;
-	if (god % 4 == 0 && god % 100 != 0 || god % 400 == 0)
+	cout << "-----------------------------------------------";
+	Summa(a, b, c);
+	//Задание 2. Применение итерации реализации функции
+
+	cout << C1(5)<< endl;
+	cout << C2(5) << endl;
+	//Задание 3. Работа с различными треугольниками
+	cout << "Выберите тип треугольника Равносторонний 1, Разносторонний 2\n";
+	int choice;
+	cin >> choice;
+	if (choice == 1) {
+		cout << "Введите длину стороны треугольника:";
+		double side;
+		cin >> side;
+		
+		cout << Triangle(side) << endl;
+	}
+	else if(choice==2)
 	{
-		cout << "\nYES";
+		cout << "Введите длины сторон треугольника a b c:";
+		double a,b,c;
+		cin >> a>> b >> c;
+		cout << Triangle(a,b,c);
 	}
 	else
 	{
-		cout << "\nNO";
+		cout << "неверныq ввод";
 	}
-	//Задание 2.Определение наибольшего из трех чисел
-	cout << "\n---------------------\n";
-	cout << "Определение наибольшего из трех чисел\n";
-	int number1, number2, number3;
-	cout << "Введите три числа через пробел:"; cin >> number1 >> number2 >> number3;
-	if (number1 > number2 && number1 > number3)
-	{
-		cout << "\nНаибольшее число:" << number1;
-	}
-	else if (number2 > number1 && number2 > number3)
-	{
-		cout << "\nНаибольшее число:" << number2;
-	}
-	else
-	{
-		cout << "\nНаибольшее число:" << number3;
-	}
-	//Задание 3. Размен монет
-	cout << "\n---------------------\n";
-	cout << "\nЗадание 3. Размен монет\n";
-	int nominals[] = { 10,5,2,1};
-
-	int sum;
-	cout << "Введите сумму размена: ";
-	cin >> sum;
-	int i = 0, amount;
-	while (sum > 0) {
-		if (sum >= nominals[i]) {
-			amount = sum / nominals[i];
-			cout << "Кол-во:" << amount << " номинал:"
-				<< nominals[i]  << endl;
-			sum = sum - amount * nominals[i];
-			i++;
-		}
-		else {
-			i++;
-		}
-	}
-	//Задание 4. Стрельба по мишени
-	int Xpoint, Ypoint;
-	Xpoint = 1 + rand() % 10; 
-	Ypoint = 1 + rand() % 10;
-	Xpoint = 0;
-	Ypoint = 0;
-	int chance,shoot=0;
-	cout << " цель " << Xpoint << " " << Ypoint;
-	int score = 0;
-	int x, y;
-	while (score<50)
-	{
-		cout << "\n---------------------------------";
-		cout << "\nВведите координаты выстрела х у: ";
-		cin >> x >> y;
-		chance = 1+ rand() % 25;
-		if (chance !=2) {
-			
-			if (x >= Xpoint && x <= Xpoint + 1 && y >= Ypoint && y <= Ypoint + 1 && (x - Xpoint) ^ 2 + (y - Ypoint) ^ 2 <= 2.25)
-			{
-				cout << "\nПопадание, вы получаете 10 баллов\n";
-				score += 10;
-				shoot += 1;
-			}
-			else if (x >= Xpoint + 1.01 && x <= Xpoint + 2 && y >= Ypoint + 1 && y <= Ypoint + 2 && (x - Xpoint) ^ 2 + (y - Ypoint) ^ 2 <= 2.25)
-			{
-				cout << "\nПопадание, вы получаете 5 баллов\n";
-				score += 5;
-				shoot += 1;
-			}
-			else if (x >= Xpoint + 2.01 && x <= Xpoint + 3 && y >= Ypoint + 3 && y <= Ypoint + 3 && (x - Xpoint) ^ 2 + (y - Ypoint) ^ 2 <= 2.25)
-			{
-				cout << "\nПопадание, вы получаете 1 баллов\n";
-				score += 5;
-				shoot += 1;
-			}
-			else
-			{
-				cout << "\nПромах\n";
-				shoot += 1;
-			}
-			cout << "\nКоличество очков:" << score << "\nПроизведено выстрелов:" << shoot << endl;
-		}
-		else
-		{
-			cout << "\nОружие дало осечку\n";
-		}
-	}
-	cout << "\n---------------------------------\n";
-	if (shoot < 7) 
-	{
-		cout << "Уровень стрелка Снайпер";
-	}
-	else if (shoot > 7 && shoot < 15)
-	{
-		cout << "Уровень стрелка Стрелок";
-	}
-	else
-	{
-		cout << "Уровень стрелка Новичек";
-	}
-	cout << " \nКоличество выстрелов" <<shoot<< endl;
-
-
+	//Задание 5. Применение рекурсии для перевода целого числа в двоичный код
+	converter(6);
 
 
 system("pause");
