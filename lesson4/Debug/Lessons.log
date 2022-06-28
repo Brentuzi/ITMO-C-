@@ -1,0 +1,10 @@
+﻿  Lessons.cpp
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(35): warning C4101: p1: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(35): warning C4101: p2: неиспользованная локальная переменная
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(52): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Lessons.vcxproj -> C:\Users\Alex-\source\repos\Lessons\Debug\Lessons.exe
