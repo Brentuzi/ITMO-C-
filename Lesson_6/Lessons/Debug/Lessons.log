@@ -1,0 +1,7 @@
+﻿  Lessons.cpp
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\alex-\source\repos\lessons\lessons\lessons.cpp(9): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Lessons.vcxproj -> C:\Users\Alex-\source\repos\Lessons\Debug\Lessons.exe
