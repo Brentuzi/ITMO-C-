@@ -1,0 +1,3 @@
+﻿  ABook.cpp
+c:\users\alex-\source\repos\abook\abook\abook.cpp(46): warning C4101: choice: неиспользованная локальная переменная
+  ABook.vcxproj -> C:\Users\Alex-\source\repos\ABook\Debug\ABook.exe

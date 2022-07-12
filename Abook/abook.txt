@@ -1,0 +1,16 @@
+FIO Petr Olegovich Ivan
+AGE : 35
+Phone: 6542535
+Adress: Polushina, дом 65, квартира 12
+Mail:Ivan@mail.ru
+kafedra : Infortatic
+lecturer
+-------------
+FIO petr Sansa Petrov
+AGE : 18
+Phone: 1564585
+Adress: Biruzova, дом 45, квартира 85
+Mail:D2@gmail.com
+facultet : 09
+STUDENT
+-------------
