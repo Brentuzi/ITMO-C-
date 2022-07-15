@@ -1,0 +1,12 @@
+﻿  lesson.cpp
+c:\users\alex-\source\repos\lesson\lesson\lesson.cpp(11): warning C4244: +=: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=double
+          ]
+  c:\users\alex-\source\repos\lesson\lesson\lesson.cpp(29): note: выполняется компиляция ссылки на экземпляр шаблон функции "double Sred<double>(T [],int)"
+          with
+          [
+              T=double
+          ]
+  lesson.vcxproj -> C:\Users\Alex-\source\repos\lesson\Debug\lesson.exe
